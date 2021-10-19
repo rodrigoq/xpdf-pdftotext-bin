@@ -1,5 +1,5 @@
 {
-	"name": "rodrigoq/xpdf-pdftotext-bin",
+	"name": "mehrkanal/xpdf-pdftotext-bin",
 	"description": "Xpdf pdftotext binaries x64",
 	"type": "library",
 	"license": "GPL-3.0-only",
