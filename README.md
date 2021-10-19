@@ -1,7 +1,22 @@
 # xpdf-pdftotext-bin
-pdftotext binaries x64 windows and linux from xpdf.
+
+**pdftotext** binaries x64 windows and linux from xpdf.
 
 https://www.xpdfreader.com/
+
+## Installation
+
+```shell
+composer require --prefer-dist rodrigoq/xpdf-pdftotext-bin 
+```
+
+## Usage
+
+Binaries of **pdftotext** lib stored on @vendor/bin
+
+```shell
+vendor/bin/pdftotext
+```
 
 ## License
 
