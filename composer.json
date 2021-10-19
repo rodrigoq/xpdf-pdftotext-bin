@@ -15,6 +15,7 @@
 			"rodrigoq\\pdftotext\\": "src/"
 		}
 	},
+	"bin": ["bin/pdftotext", "bin/pdftotext.exe"],
 	"extra": {
 		"original": [
 			{
