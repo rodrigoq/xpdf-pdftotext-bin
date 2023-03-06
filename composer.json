@@ -1,27 +1,36 @@
 {
-	"name": "mehrkanal/xpdf-pdftotext-bin",
-	"description": "Xpdf pdftotext binaries x64",
-	"type": "library",
-	"license": "GPL-3.0-only",
-	"authors": [
-		{
-			"name": "rodrigoq",
-			"homepage": "https://github.com/rodrigoq"
-		}
-	],
-	"version": "4.03",
-	"autoload": {
-		"psr-4": {
-			"rodrigoq\\pdftotext\\": "src/"
-		}
-	},
-	"bin": ["bin/pdftotext", "bin/pdftotext.exe"],
-	"extra": {
-		"original": [
-			{
-				"name": "xpdf",
-				"url": "https://www.xpdfreader.com"
-			}
-		]
-	}
+  "name": "mehrkanal/xpdf-pdftotext-bin",
+  "description": "Xpdf pdftotext binaries x64",
+  "type": "library",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "xpdf-pdftotext-bin",
+      "homepage": "https://github.com/mehrkanal/xpdf-pdftotext-bin"
+    }
+  ],
+  "version": "4.04",
+  "autoload": {
+    "psr-4": {
+      "Mehrkanal\\PdfToText\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/pdftotext",
+    "bin/pdftotext.exe"
+  ],
+  "extra": {
+    "original": [
+      {
+        "name": "xpdf",
+        "url": "https://www.xpdfreader.com"
+      }
+    ]
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.9.6"
+  }
 }

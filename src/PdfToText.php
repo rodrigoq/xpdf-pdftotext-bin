@@ -1,33 +1,25 @@
 <?php
 
-namespace rodrigoq\pdftotext;
+namespace Mehrkanal\PdfToText;
+
+use RuntimeException;
 
 class PdfToText
 {
-	const BIN = 'pdftotext';
+    private const BIN = 'pdftotext';
 
-	public static function GetBin() : string
-	{
-		self::SetX();
-		return self::BIN;
-	}
+    public static function getBinFullPath(): string
+    {
+        $file = realpath(self::getBinaryPath() . '/' . self::BIN);
+        if ($file === false) {
+            throw new RuntimeException('Binary not found.');
+        }
+        return $file;
+    }
 
-	public static function GetBinFullPath() : string
-	{
-		self::SetX();
-		return realpath(self::GetPath() . '/' . self::BIN);
-	}
-
-	public static function GetPath() : string
-	{
-		return realpath(__DIR__ . '/../bin');
-	}
-
-	public static function setX() : void
-	{
-		$file = realpath(self::GetPath() . '/' . self::BIN);
-		if(fileperms($file) & 0777 !== 0755)
-			chmod($file, 0755);
-	}
+    public static function getBinaryPath(): string
+    {
+        return dirname(__DIR__) . '/bin';
+    }
 }
 
